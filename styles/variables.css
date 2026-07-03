@@ -2,7 +2,7 @@
 
 :root {
   --font-main: "Inter-Variable", sans-serif;
-  --font-accent: "PressStart2P", monospace;
+  --font-accent: "PressStart2P", fantasy;
   --color: #000;
   --cover:
     repeating-linear-gradient(to left, #d3d3d3 0 2px, #d3d3d300 2px 4px),

@@ -15,7 +15,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--color);
-  font-family: var(--font-base), sans-serif;
+  font-family: var(--font-main), sans-serif;
   font-variation-settings: "wght" var(--wght);
   font-size: var(--font-size);
   background-image: var(--cover);
@@ -39,7 +39,7 @@
 
 .header__decor {
   display: block;
-  font-family: var(--font-accent), monospace;
+  font-family: var(--font-accent), fantasy;
   font-size: var(--hero-title);
   margin-block-start: clamp(122px, calc(0.00751 * 100vw + 119.18px), 130px);
   align-items: center;
@@ -55,7 +55,7 @@
   font-size: var(--hero-subtitle);
   text-align: center;
   align-content: center;
-  font-family: var(--font-accent), monospace;
+  font-family: var(--font-accent), fantasy;
   text-transform: uppercase;
   margin-block-end: clamp(122px, calc(0.00751 * 100vw + 119.18px), 130px);
 }
@@ -122,7 +122,7 @@ main {
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--font-accent), monospace;
+  font-family: var(--font-accent), fantasy;
   text-shadow:
     -1px 0 var(--page-bg-color),
     1px 0 var(--page-bg-color),
@@ -203,10 +203,6 @@ main {
   transition: width 0.5s ease-in-out;
 }
 
-.button .button__text {
-  transition: color 0.5s ease-in-out;
-}
-
 .button:hover::before {
   width: 100%;
 }
@@ -219,7 +215,7 @@ main {
 .button__text {
   font-size: var(--button-size);
   color: var(--button-text-color);
-  font-family: var(--font-accent), monospace;
+  font-family: var(--font-accent), fantasy;
   mix-blend-mode: difference;
 }
 
@@ -267,7 +263,7 @@ main {
 
 .dialog__title {
   display: flex;
-  font-family: var(--font-accent), monospace;
+  font-family: var(--font-accent), fantasy;
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
@@ -288,7 +284,7 @@ main {
 
 .dialog__message {
   display: flex;
-  font-family: var(--font-accent), monospace;
+  font-family: var(--font-accent), fantasy;
   font-size: 14px;
   line-height: 150%;
   justify-content: center;
@@ -310,12 +306,6 @@ main {
     -webkit-text-stroke: 1px var(--page-bg-color);
     text-stroke: 1px var(--page-bg-color);
     text-shadow: none;
-  }
-}
-
-@supports (mix-blend-mode: difference) {
-  .button .button__text {
-    transition: none;
   }
 }
 
